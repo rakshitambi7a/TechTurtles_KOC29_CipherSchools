@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin Sans:wght@400;700&display=swap');
+:root{
+	--primary-color: #e2b714;
+	--secondary-color: #323437;
+	--font: 'Inter', Sans-Serif;
+	--font1: 'Josefin Sans', Sans-Serif
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.btn{
+	padding: .6rem .8rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	background: var(--primary-color);
+	color:var(--secondary-color);
+	font-size: 16px;
+	text-decoration: none;
+	outline: none;
+	border: 2px solid var(--primary-color);
+	border-radius: 15px 15px 15px 15px;
+	transition: .3s;
+	cursor: pointer;
+}
+.btn:hover{
+	background: transparent;
+	color: white
+}
+body{
+	background: black;
+	font-family: var(--font);
+}
+
+nav{
+	position: fixed;
+	width: 100vw;
+	height: 60px;
+	border-top: .5rem solid var(--primary-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999999;
+	background: rgba(0, 0, 0, 0.103);
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 65px;
+	width: 15%;
+	font-weight: 800;
+	background: var(--primary-color);
+
+}
+
+.logo::before{
+	content: "FITNESS";
+	font-family:var(--font1);
+	color: var(--secondary-color);
+}
+.logo::after{
+	content: "CLUB";
+	font-family:var(--font1);
+	color: rgb(255, 255, 255);
+}
+
+ul{
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+ul a{
+	text-decoration: none;
+	color: white;
+	margin: 0 2rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	font-weight: 700;
+	font-size: 16px;
+}
+ul li{
+	list-style: none;
+	font-size: small;
+}
+ul a:hover{
+	color: var(--primary-color);
+}
+
+.banner{
+	background-color:black;
+	background: url(https://unsplash.com/photos/9dzWZQWZMdE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Nnx8Z3ltJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE2Njk5OTk2ODI&force=true);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 85vh;
+	
+}
+.intro{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	color: white;
+}
+
+.intro h2,p{
+	display: block;
+	width: 60%;
+}
+
+.intro h2{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 30px;
+	font-colour: rgb(255, 0, 0);
+}
+.intro .btn{
+	margin-top: 2rem;
+}
+
+.row{
+	display: flex;
+	justify-content: center;
+}
+.card{
+	width: 33.3%;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.card h2{
+	text-transform: uppercase;
+}
+span{
+	color: #e2b714
+}
+
+
